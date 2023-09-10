@@ -9,14 +9,35 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    FontFamily="Cascadia Code" 
+    >
 
     <Grid Background="#02000000">
-        <ListBox x:ConnectionId='2' x:Name="ProjectList" Width="259" FontSize="14" FontFamily="Cascadia Code" Background="{x:Null}" HorizontalAlignment="Left"  Height="Auto" MinWidth="100" MinHeight="100" MaxWidth="500" BorderThickness="1,1,1,1" Margin="0,60,0,0"                                                />
-        <TextBlock HorizontalAlignment="Left" Height="58" Margin="2,2,0,0" TextWrapping="Wrap" Text="Project" VerticalAlignment="Top" Width="189" FontSize="36" FontFamily="Cascadia Code" LineHeight="6" TextAlignment="Center"/>
-        <Border x:ConnectionId='3' x:Name="ProjectMan" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="496" Margin="294,60,0,0" VerticalAlignment="Top" Width="228" Background="#4CA4A4A4" CornerRadius="10,10,10,10">
-            <Button x:ConnectionId='4' x:Name="Project_del" Content="Delete" Height="35" Margin="0,90,0,0" VerticalAlignment="Top" Width="188" FontSize="20" FontFamily="Cascadia Code" HorizontalAlignment="Center"                          />
+        <ListBox x:ConnectionId='2' x:Name="ProjectList" Width="259" FontSize="14" Background="{x:Null}" HorizontalAlignment="Left"  Height="Auto" MinWidth="100" MinHeight="100" MaxWidth="500" BorderThickness="1,1,1,1" Margin="0,60,0,0"                                                 />
+        <TextBlock HorizontalAlignment="Left" Height="58" Margin="2,2,0,0" TextWrapping="Wrap" Text="Project" VerticalAlignment="Top" Width="189" FontSize="36" LineHeight="6" TextAlignment="Center"/>
+        <Border x:ConnectionId='3' x:Name="ProjectMan" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="127" Margin="301,282,0,0" VerticalAlignment="Top" Width="462" Background="#4CA4A4A4" CornerRadius="10,10,10,10">
+            <Grid>
+                <Button x:ConnectionId='12' x:Name="Project_del" Content="Delete" Height="35" Margin="23,0,0,0" Width="188" FontSize="20" Background="#33FF0000" Foreground="White"                          />
+                <Button x:ConnectionId='13' x:Name="Project_ref" Content="Refresh" Height="35" Margin="246,0,0,0" Width="188" FontSize="20" Background="#33FFFFFF" Foreground="White"                          />
+            </Grid>
         </Border>
+        <Border x:ConnectionId='4' x:Name="ProjectNew" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="246" Margin="294,432,0,0" VerticalAlignment="Top" Width="469" Background="#4CA4A4A4" CornerRadius="10,10,10,10">
+            <Grid Background="#02FFFFFF">
+                <TextBlock HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text=" New Project" VerticalAlignment="Top" Width="203" FontSize="22" LineHeight="6" Margin="-1,3,0,0"/>
+                <TextBox x:ConnectionId='10' x:Name="ProjectNew_Name" HorizontalAlignment="Center" Margin="0,83,0,0" TextWrapping="Wrap" Text="MyNewProject" VerticalAlignment="Top" Height="38" Width="334" FontSize="22" FontFamily="Cascadia Code"                                          />
+                <Button x:ConnectionId='11' x:Name="ProjectNew_Creat" Content="Creat" Height="41" Margin="0,172,0,0" VerticalAlignment="Top" Width="171" HorizontalAlignment="Center" FontSize="20"                               />
+            </Grid>
+        </Border>
+        <Border x:ConnectionId='5' x:Name="ProjectInfo" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="201" Margin="294,60,0,0" VerticalAlignment="Top" Width="469" Background="#4CA4A4A4" CornerRadius="10,10,10,10">
+            <Grid Background="#02FFFFFF">
+                <TextBlock HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text=" Project Info" VerticalAlignment="Top" Width="203" FontSize="22" LineHeight="6" Margin="-1,3,0,0"/>
+                <TextBlock x:ConnectionId='8' x:Name="ProjectCreatName" HorizontalAlignment="Left" Height="30" Margin="59,52,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="341" FontSize="24" LineHeight="6" TextAlignment="Center"/>
+                <TextBlock x:ConnectionId='9' x:Name="ProjectCreatTime" HorizontalAlignment="Left" Height="30" Margin="59,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="341" FontSize="24" LineHeight="6" TextAlignment="Center"/>
+            </Grid>
+        </Border>
+        <TextBox x:ConnectionId='6' x:Name="ProjectBody" HorizontalAlignment="Left" Margin="784,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="611" Width="412" FontSize="18"/>
+        <Button x:ConnectionId='7' x:Name="ProjectSaveBody" Content="Save" Margin="926,646,0,0" VerticalAlignment="Top" Width="129" FontSize="18"                              />
     </Grid>
 </Page>
 

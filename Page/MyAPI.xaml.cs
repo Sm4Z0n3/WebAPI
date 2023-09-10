@@ -16,26 +16,32 @@ namespace WebAPI.Page
     /// </summary>
     public sealed partial class MyAPI
     {
-        public string ProjectPath = Directory.GetCurrentDirectory() + "\\Project";
+        //public string ProjectPath = Directory.GetCurrentDirectory() + "\\NovaProject";
+        public string ProjectPath = "D:\\NovaProject";
         public MyAPI()
         {
             this.InitializeComponent();
             if (!Directory.Exists(ProjectPath))
             {
-                if (Directory.GetFiles(ProjectPath).Length == 0)
-                {
-                    ProjectList.Items.Add("Not Found Project.");
-                }
                 Directory.CreateDirectory(ProjectPath);
+
             }
             else
             {
-                string[] folders = Directory.GetDirectories(ProjectPath, "*", SearchOption.AllDirectories);
-                foreach (string folder in folders)
+                if (Directory.GetFiles(ProjectPath).Length < 1)
                 {
-                    Console.WriteLine(folder);
-                    ProjectList.Items.Add(folder);
+                    ProjectList.Items.Add("Not Found Project.");
                 }
+                else
+                {
+                    string[] folders = Directory.GetDirectories(ProjectPath, "*", SearchOption.AllDirectories);
+                    foreach (string folder in folders)
+                    {
+                        Console.WriteLine(folder);
+                        ProjectList.Items.Add(folder);
+                    }
+                }
+
             }
         }
     }

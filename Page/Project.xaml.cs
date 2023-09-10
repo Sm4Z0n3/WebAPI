@@ -26,43 +26,131 @@ namespace WebAPI.Page
     /// </summary>
     public sealed partial class Project
     {
-        public string ProjectPath = Directory.GetCurrentDirectory() + "\\Project";
+        //public string ProjectPath = Directory.GetCurrentDirectory() + "\\NovaProject";
+        public string ProjectPath = "D:\\NovaProject";
+
+        bool NewProjectName = false;
         public Project()
         {
             this.InitializeComponent();
+            ProjectList.Items.Clear();
             if (!Directory.Exists(ProjectPath))
             {
-                if(Directory.GetFiles(ProjectPath).Length == 0)
-                {
-                    ProjectList.Items.Add("Not Found Project.");
-                }
                 Directory.CreateDirectory(ProjectPath);
+
             }
             else
             {
-                string[] folders = Directory.GetDirectories(ProjectPath, "*", SearchOption.AllDirectories);
-                foreach (string folder in folders)
+                if (Directory.GetFiles(ProjectPath).Length <1)
                 {
-                    Console.WriteLine(folder);
-                    ProjectList.Items.Add(folder);
+                    ProjectList.Items.Add("Not Found Project.");
+                }
+                else
+                {
+                    string[] folders = Directory.GetDirectories(ProjectPath, "*", SearchOption.AllDirectories);
+                    foreach (string folder in folders)
+                    {
+                        Console.WriteLine(folder);
+                        ProjectList.Items.Add(folder.Replace(ProjectPath + "\\", ""));
+                    }
                 }
             }
         }
-
+        string ProjectInfo_ = "";
         private void ProjectList_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (ProjectList.SelectedValue.ToString() != "Not Found Project Directory.")
+            try
             {
-                Console.WriteLine(ProjectList.SelectedValue.ToString());
+                if (ProjectList.SelectedIndex != -1)
+                {
+                    ProjectInfo_ = File.ReadAllText(ProjectPath + "\\" + ProjectList.SelectedItem.ToString() + "\\Main.novaProject");
+                    ProjectCreatName.Text = Text_GetCenter(ProjectInfo_, "<ProjectName>", "</ProjectName>");
+                    ProjectCreatTime.Text = Text_GetCenter(ProjectInfo_, "<CreatTime>", "</CreatTime>");
+                    ProjectBody.Text = Text_GetCenter(ProjectInfo_, "<ProjectBody>", "</ProjectBody>");
+                }
             }
+            catch{}
+
         }
 
         private void Project_del_Click(object sender, RoutedEventArgs e)
         {
-            if (ProjectList.SelectedValue.ToString() != "Not Found Project Directory.")
+            if (ProjectList.SelectedValue.ToString() != "Not Found Project.")
             {
-                Console.WriteLine(ProjectList.SelectedValue.ToString());
+                Directory.Delete(ProjectPath + "\\" + ProjectList.SelectedValue.ToString(),true);
+                Object delitem = ProjectList.SelectedItem;
+                ProjectList.SelectedItem = null;
+                ProjectList.Items.Remove(delitem);
             }
         }
+
+        private void Project_ref_Click(object sender, RoutedEventArgs e)
+        {
+            ProjectList.Items.Clear();
+            Console.WriteLine($"ProjectPaht: {ProjectPath}\nPathExists: {Directory.Exists(ProjectPath)}\nFiles Num: {Directory.GetFiles(ProjectPath).Length}");
+            if (!Directory.Exists(ProjectPath))
+                Directory.CreateDirectory(ProjectPath);
+            else
+            {
+                if (Directory.GetFiles(ProjectPath).Length >= 1)
+                {
+                    string[] folders = Directory.GetDirectories(ProjectPath, "*", SearchOption.AllDirectories);
+                    foreach (string folder in folders)
+                    {
+                        Console.WriteLine(folder);
+                        ProjectList.Items.Add(folder.Replace(ProjectPath + "\\",""));
+                    }
+                }
+            }
+        }
+
+        private void ProjectNew_Name_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (Directory.Exists(ProjectPath + "\\" + ProjectNew_Name.Text))
+                NewProjectName = false;
+            else
+                NewProjectName = true;
+        }
+
+        private void ProjectNew_Creat_Click(object sender, RoutedEventArgs e)
+        {
+            if(NewProjectName)
+            {
+                Directory.CreateDirectory(ProjectPath + "\\" + ProjectNew_Name.Text);
+                File.WriteAllText(ProjectPath + "\\" + ProjectNew_Name.Text + "\\Main.novaProject",$"<ProjectInfo>\r\n\t<ProjectName>{ProjectNew_Name.Text}</ProjectName>\r\n\t<CreatTime>{DateTime.Now.ToString("yyyy-MM-dd HH:mm")}</CreatTime>\r\n</ProjectInfo>\r\n<ProjectBody>\r\n\r\n</ProjectBody>");
+            }
+            Project_ref_Click(new object(), new RoutedEventArgs());
+        }
+
+        public string Text_GetCenter(string source, string first, string last)
+        {
+            string result = "";
+            int startIndex = source.IndexOf(first);
+            int endIndex = source.IndexOf(last);
+            if (startIndex >= 0 && endIndex >= 0)
+            {
+                startIndex += first.Length; // move to the end of the first text
+                int length = endIndex - startIndex; // calculate the length of the text between
+                result = source.Substring(startIndex, length); // result is " and "
+            }
+            return result;
+        }
+
+        public string Text_ReplaceCenter(string source, string replacement, string first, string last)
+        {
+            string result = "";
+            int startIndex = source.IndexOf(first);
+            int endIndex = source.IndexOf(last);
+            if (startIndex >= 0 && endIndex >= 0)
+            {
+                startIndex += first.Length; // move to the end of the first text
+                int length = endIndex - startIndex; // calculate the length of the text between
+                source = source.Remove(startIndex, length); // remove the text between
+                source = source.Insert(startIndex, replacement); // insert the replacement text
+                result = source; // result is "This is a test string with firstAny given string comes herelast words"
+            }
+            return result;
+        }
+
     }
 }
