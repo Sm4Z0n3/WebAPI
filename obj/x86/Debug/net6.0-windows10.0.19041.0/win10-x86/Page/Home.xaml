@@ -1,0 +1,26 @@
+﻿<!-- Copyright (c) Microsoft Corporation and Contributors. -->
+<!-- Licensed under the MIT License. -->
+
+<Page
+    x:Class="WebAPI.Page.Home"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WebAPI.Page"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="765" Width="1420">
+
+    <Grid>
+        <Border CornerRadius="10" Margin="39,96,1009,487" Background="#19FFFFFF">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" Height="26" Margin="26,27,0,0" TextWrapping="Wrap" Text="Online API : " VerticalAlignment="Top" Width="323" FontSize="20" FontFamily="Cascadia Code SemiBold"/>
+                <TextBlock HorizontalAlignment="Left" Height="26"  Margin="26,133,0,0" TextWrapping="Wrap" Text="All API : " VerticalAlignment="Top" Width="323" FontSize="20" FontFamily="Cascadia Code SemiBold"/>
+                <TextBlock HorizontalAlignment="Left" Height="26"  Margin="26,95,0,0" TextWrapping="Wrap" Text="Error API : " VerticalAlignment="Top" Width="323" FontSize="20" FontFamily="Cascadia Code SemiBold"/>
+                <TextBlock HorizontalAlignment="Left" Height="26"  Margin="26,60,0,0" TextWrapping="Wrap" Text="Offline API : " VerticalAlignment="Top" Width="323" FontSize="20" FontFamily="Cascadia Code SemiBold"/>
+            </Grid>
+        </Border>
+        <TextBlock Height="74" TextWrapping="Wrap" Text="  NovaWebAPI | Dashboard" VerticalAlignment="Top" Width="1872" FontSize="48" Margin="10,0,0,0" HorizontalAlignment="Left"/>
+    </Grid>
+</Page>
+

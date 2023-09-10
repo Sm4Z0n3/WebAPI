@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "WebAPI (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "WebAPI (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
