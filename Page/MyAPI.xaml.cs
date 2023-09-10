@@ -16,13 +16,26 @@ namespace WebAPI.Page
     /// </summary>
     public sealed partial class MyAPI
     {
+        public string ProjectPath = Directory.GetCurrentDirectory() + "\\Project";
         public MyAPI()
         {
             this.InitializeComponent();
-            if (!Directory.Exists("Project"))
+            if (!Directory.Exists(ProjectPath))
             {
-                ProjectList.Items.Add("Not Found Project Directory.");
-                //Directory.CreateDirectory("Project");
+                if (Directory.GetFiles(ProjectPath).Length == 0)
+                {
+                    ProjectList.Items.Add("Not Found Project.");
+                }
+                Directory.CreateDirectory(ProjectPath);
+            }
+            else
+            {
+                string[] folders = Directory.GetDirectories(ProjectPath, "*", SearchOption.AllDirectories);
+                foreach (string folder in folders)
+                {
+                    Console.WriteLine(folder);
+                    ProjectList.Items.Add(folder);
+                }
             }
         }
     }

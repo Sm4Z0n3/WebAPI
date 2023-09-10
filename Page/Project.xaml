@@ -15,7 +15,7 @@
         <ListBox x:Name="ProjectList" Width="259" FontSize="14" FontFamily="Cascadia Code" Background="{x:Null}" HorizontalAlignment="Left"  Height="Auto" MinWidth="100" MinHeight="100" MaxWidth="500" BorderThickness="1,1,1,1" Margin="0,60,0,0" SelectionChanged="ProjectList_SelectionChanged"/>
         <TextBlock HorizontalAlignment="Left" Height="58" Margin="2,2,0,0" TextWrapping="Wrap" Text="Project" VerticalAlignment="Top" Width="189" FontSize="36" FontFamily="Cascadia Code" LineHeight="6" TextAlignment="Center"/>
         <Border x:Name="ProjectMan" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="496" Margin="294,60,0,0" VerticalAlignment="Top" Width="228" Background="#4CA4A4A4" CornerRadius="10,10,10,10">
-            <Button x:Name="Project_del" Content="Delete" Height="35" Margin="0,90,0,0" VerticalAlignment="Top" Width="188" FontSize="20" FontFamily="Cascadia Code" HorizontalAlignment="Center"/>
+            <Button x:Name="Project_del" Content="Delete" Height="35" Margin="0,90,0,0" VerticalAlignment="Top" Width="188" FontSize="20" FontFamily="Cascadia Code" HorizontalAlignment="Center" Click="Project_del_Click"/>
         </Border>
     </Grid>
 </Page>

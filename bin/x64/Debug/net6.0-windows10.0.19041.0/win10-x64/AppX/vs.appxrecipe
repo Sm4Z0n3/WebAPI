@@ -29,13 +29,13 @@
     <AppXManifest Include="E:\CSProject\WebAPI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-09-10T07:40:04.092</Modified>
+      <Modified>2023-09-10T07:52:13.190</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\CSProject\WebAPI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-09-10T07:40:03.915</Modified>
+      <Modified>2023-09-10T07:52:13.086</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\CSProject\WebAPI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\WebAPI.runtimeconfig.json">
       <PackagePath>WebAPI.runtimeconfig.json</PackagePath>
@@ -43,7 +43,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\CSProject\WebAPI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\WebAPI.dll">
       <PackagePath>WebAPI.dll</PackagePath>
-      <Modified>2023-09-10T07:40:03.078</Modified>
+      <Modified>2023-09-10T07:52:12.904</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.InteractiveExperiences.Projection.dll">
       <PackagePath>Microsoft.InteractiveExperiences.Projection.dll</PackagePath>
@@ -1007,7 +1007,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\CSProject\WebAPI\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>WebAPI.exe</PackagePath>
-      <Modified>2023-09-10T07:40:03.391</Modified>
+      <Modified>2023-09-10T07:52:12.915</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\CSProject\WebAPI\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
