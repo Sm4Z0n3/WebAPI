@@ -5,6 +5,7 @@ using Microsoft.UI.Xaml;
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -21,9 +22,26 @@ namespace WebAPI.Page
     /// </summary>
     public sealed partial class Home
     {
+        public int AllApi = 0;
+        public int OnlineApi = 0;
+        public int OfflineApi = 0;
+        public int ErrorApi = 0;
+
         public Home()
         {
             this.InitializeComponent();
+            AllAPI_.Text = "All API : " + AllApi.ToString();
+            OnlineAPI_.Text = "Online API : " + OnlineApi.ToString();
+            OfflineAPI_.Text = "Offline API : " + OfflineApi.ToString();
+            ErrorAPI_.Text = "Error API : " + ErrorApi.ToString();
         }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            AllAPI_.Text = "All API : " + AllApi.ToString();
+            OnlineAPI_.Text = "Online API : " + OnlineApi.ToString();
+            OfflineAPI_.Text = "Offline API : " + OfflineApi.ToString();
+            ErrorAPI_.Text = "Error API : " + ErrorApi.ToString();
+        }
+
     }
 }

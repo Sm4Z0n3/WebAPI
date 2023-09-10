@@ -1,5 +1,5 @@
 ﻿# NovaWebAPI
- NovaWebAPI QQKey
+ Nova WebAPI 管理器 | 开发工具
 
 
 ![i](https://img.shields.io/github/stars/Sm4Z0n3/WebAPI.svg)

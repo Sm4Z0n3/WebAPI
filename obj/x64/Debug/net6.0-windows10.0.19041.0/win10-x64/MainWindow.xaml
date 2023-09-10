@@ -1,4 +1,4 @@
-<!-- Copyright (c) Microsoft Corporation and Contributors. -->
+﻿<!-- Copyright (c) Microsoft Corporation and Contributors. -->
 <!-- Licensed under the MIT License. -->
 
 <Window
@@ -11,8 +11,8 @@
     mc:Ignorable="d"
 >
 
-    <Grid Name="MainGrid" Background="{ThemeResource AppBarBackgroundThemeBrush}">
-        <NavigationView x:Name="navView" PaneDisplayMode="LeftCompact" IsBackButtonVisible="Collapsed" SelectionChanged="NavigationView_SelectionChanged" Width="134" FocusVisualSecondaryBrush="{x:Null}" HorizontalAlignment="Left" FontSize="12" Background="{ThemeResource AppBarBackgroundThemeBrush}" Content="">
+    <Grid x:ConnectionId='2' Name="MainGrid" Background="{ThemeResource AppBarBackgroundThemeBrush}">
+        <NavigationView x:ConnectionId='3' x:Name="navView" PaneDisplayMode="LeftCompact" IsBackButtonVisible="Collapsed"                                                    Width="134" FocusVisualSecondaryBrush="{x:Null}" HorizontalAlignment="Left" FontSize="12" Background="{ThemeResource AppBarBackgroundThemeBrush}" Content="">
             <NavigationView.MenuItems>
                 <NavigationViewItem Icon="Home" Content="Home" Tag="Home"/>
                 <NavigationViewItem Icon="Preview" Content="Project" Tag="Project"/>
@@ -20,6 +20,7 @@
                 <NavigationViewItem Icon="Contact" Content="Contact" Tag="Contact"/>
             </NavigationView.MenuItems>
         </NavigationView>
-        <Frame x:Name="contentFrame" Margin="134,0,0,0" Width="NaN" Background="{ThemeResource AppBarBackgroundThemeBrush}"/>
+        <Frame x:ConnectionId='4' x:Name="contentFrame" Margin="134,0,0,0" Width="NaN" Background="{ThemeResource AppBarBackgroundThemeBrush}"/>
     </Grid>
 </Window>
+

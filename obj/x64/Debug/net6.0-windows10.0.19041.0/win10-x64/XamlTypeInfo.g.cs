@@ -224,7 +224,7 @@ namespace WebAPI.WebAPI_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[38];
+            _typeNameTable = new string[39];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -262,9 +262,10 @@ namespace WebAPI.WebAPI_XamlTypeInfo
             _typeNameTable[34] = "Microsoft.UI.Xaml.Controls.UserControl";
             _typeNameTable[35] = "WebAPI.Page.Home";
             _typeNameTable[36] = "WebAPI.Page.MyAPI";
-            _typeNameTable[37] = "WebAPI.Page.Settings";
+            _typeNameTable[37] = "WebAPI.Page.Project";
+            _typeNameTable[38] = "WebAPI.Page.Settings";
 
-            _typeTable = new global::System.Type[38];
+            _typeTable = new global::System.Type[39];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -302,7 +303,8 @@ namespace WebAPI.WebAPI_XamlTypeInfo
             _typeTable[34] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
             _typeTable[35] = typeof(global::WebAPI.Page.Home);
             _typeTable[36] = typeof(global::WebAPI.Page.MyAPI);
-            _typeTable[37] = typeof(global::WebAPI.Page.Settings);
+            _typeTable[37] = typeof(global::WebAPI.Page.Project);
+            _typeTable[38] = typeof(global::WebAPI.Page.Settings);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -346,7 +348,8 @@ namespace WebAPI.WebAPI_XamlTypeInfo
         private object Activate_32_Contact() { return new global::WebAPI.Page.Contact(); }
         private object Activate_35_Home() { return new global::WebAPI.Page.Home(); }
         private object Activate_36_MyAPI() { return new global::WebAPI.Page.MyAPI(); }
-        private object Activate_37_Settings() { return new global::WebAPI.Page.Settings(); }
+        private object Activate_37_Project() { return new global::WebAPI.Page.Project(); }
+        private object Activate_38_Settings() { return new global::WebAPI.Page.Settings(); }
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -620,9 +623,16 @@ namespace WebAPI.WebAPI_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 37:   //  WebAPI.Page.Settings
+            case 37:   //  WebAPI.Page.Project
                 userType = new global::WebAPI.WebAPI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_37_Settings;
+                userType.Activator = Activate_37_Project;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 38:   //  WebAPI.Page.Settings
+                userType = new global::WebAPI.WebAPI_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_38_Settings;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

@@ -34,11 +34,50 @@
     <AppxPackagedFile Include="E:\CSProject\WebAPI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\WebAPI.dll">
       <PackagePath>WebAPI.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\CSProject\WebAPI\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
-      <PackagePath>WebAPI.exe</PackagePath>
+    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.InteractiveExperiences.Projection.dll">
+      <PackagePath>Microsoft.InteractiveExperiences.Projection.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\CSProject\WebAPI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\WebAPI.deps.json">
-      <PackagePath>WebAPI.deps.json</PackagePath>
+    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.WinUI.dll">
+      <PackagePath>Microsoft.WinUI.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.AppLifecycle.Projection.dll">
+      <PackagePath>Microsoft.Windows.AppLifecycle.Projection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.AppNotifications.Builder.Projection.dll">
+      <PackagePath>Microsoft.Windows.AppNotifications.Builder.Projection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.AppNotifications.Projection.dll">
+      <PackagePath>Microsoft.Windows.AppNotifications.Projection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll">
+      <PackagePath>Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.ApplicationModel.Resources.Projection.dll">
+      <PackagePath>Microsoft.Windows.ApplicationModel.Resources.Projection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll">
+      <PackagePath>Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.PushNotifications.Projection.dll">
+      <PackagePath>Microsoft.Windows.PushNotifications.Projection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.Security.AccessControl.Projection.dll">
+      <PackagePath>Microsoft.Windows.Security.AccessControl.Projection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.System.Power.Projection.dll">
+      <PackagePath>Microsoft.Windows.System.Power.Projection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.System.Projection.dll">
+      <PackagePath>Microsoft.Windows.System.Projection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.Widgets.Projection.dll">
+      <PackagePath>Microsoft.Windows.Widgets.Projection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll">
+      <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
+      <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.21\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -676,9 +715,6 @@
     <AppxPackagedFile Include="D:\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.21\runtimes\win-x64\native\coreclr.dll">
       <PackagePath>coreclr.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.21\runtimes\win-x64\native\createdump.exe">
-      <PackagePath>createdump.exe</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.21\runtimes\win-x64\native\dbgshim.dll">
       <PackagePath>dbgshim.dll</PackagePath>
     </AppxPackagedFile>
@@ -712,50 +748,14 @@
     <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.29\lib\net6.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.InteractiveExperiences.Projection.dll">
-      <PackagePath>Microsoft.InteractiveExperiences.Projection.dll</PackagePath>
+    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.21\runtimes\win-x64\native\createdump.exe">
+      <PackagePath>createdump.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.WinUI.dll">
-      <PackagePath>Microsoft.WinUI.dll</PackagePath>
+    <AppxPackagedFile Include="E:\CSProject\WebAPI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\WebAPI.deps.json">
+      <PackagePath>WebAPI.deps.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.AppLifecycle.Projection.dll">
-      <PackagePath>Microsoft.Windows.AppLifecycle.Projection.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.AppNotifications.Builder.Projection.dll">
-      <PackagePath>Microsoft.Windows.AppNotifications.Builder.Projection.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.AppNotifications.Projection.dll">
-      <PackagePath>Microsoft.Windows.AppNotifications.Projection.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll">
-      <PackagePath>Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.ApplicationModel.Resources.Projection.dll">
-      <PackagePath>Microsoft.Windows.ApplicationModel.Resources.Projection.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll">
-      <PackagePath>Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.PushNotifications.Projection.dll">
-      <PackagePath>Microsoft.Windows.PushNotifications.Projection.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.Security.AccessControl.Projection.dll">
-      <PackagePath>Microsoft.Windows.Security.AccessControl.Projection.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.System.Power.Projection.dll">
-      <PackagePath>Microsoft.Windows.System.Power.Projection.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.System.Projection.dll">
-      <PackagePath>Microsoft.Windows.System.Projection.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.Windows.Widgets.Projection.dll">
-      <PackagePath>Microsoft.Windows.Widgets.Projection.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll">
-      <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
-      <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
+    <AppxPackagedFile Include="E:\CSProject\WebAPI\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
+      <PackagePath>WebAPI.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\CSProject\WebAPI\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>

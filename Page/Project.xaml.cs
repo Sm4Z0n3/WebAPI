@@ -19,26 +19,30 @@ using Windows.Foundation.Collections;
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
 
-namespace WebAPI
+namespace WebAPI.Page
 {
     /// <summary>
-    /// An empty window that can be used on its own or navigated to within a Frame.
+    /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainWindow : Window
+    public sealed partial class Project
     {
-        public MainWindow()
+        public Project()
         {
             this.InitializeComponent();
-            MainGrid.MinWidth = 1200;
-            MainGrid.MinHeight = 730;
-        }
-        private void NavigationView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
-        {
-            var selectedItem = (NavigationViewItem)args.SelectedItem;
-            string pageName = "WebAPI.Page." + ((string)selectedItem.Tag);
-            Type pageType = Type.GetType(pageName);
-            contentFrame.Navigate(pageType);
+            if (!Directory.Exists("Project"))
+            {
+                ProjectList.Items.Add("Not Found Project Directory.");
+                //Directory.CreateDirectory("Project");
+            }
         }
 
+        private void ProjectList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (ProjectList.SelectedValue.ToString() != "Not Found Project Directory.")
+            {
+                Console.WriteLine(ProjectList.SelectedValue.ToString());
+            }
+            Console.WriteLine(ProjectList.SelectedValue.ToString());
+        }
     }
 }

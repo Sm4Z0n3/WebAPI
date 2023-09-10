@@ -303,3 +303,8 @@ E:\CSProject\WebAPI\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\qualifier
 E:\CSProject\WebAPI\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 E:\CSProject\WebAPI\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 E:\CSProject\WebAPI\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+E:\CSProject\WebAPI\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Page\Project.g.i.cs
+E:\CSProject\WebAPI\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Page\Project.g.cs
+E:\CSProject\WebAPI\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Page\Project.xaml
+E:\CSProject\WebAPI\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Page\Project.xbf
+E:\CSProject\WebAPI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Page\Project.xbf
