@@ -34,6 +34,24 @@
     <AppxPackagedFile Include="E:\CSProject\WebAPI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\WebAPI.dll">
       <PackagePath>WebAPI.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\bcrypt.net-next\4.0.2\lib\net5.0\BCrypt.Net-Next.dll">
+      <PackagePath>BCrypt.Net-Next.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\fluentftp\33.0.3\lib\netstandard2.1\FluentFTP.dll">
+      <PackagePath>FluentFTP.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\isopoh.cryptography.argon2\1.1.10\lib\net5.0\Isopoh.Cryptography.Argon2.dll">
+      <PackagePath>Isopoh.Cryptography.Argon2.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\isopoh.cryptography.blake2b\1.1.10\lib\net5.0\Isopoh.Cryptography.Blake2b.dll">
+      <PackagePath>Isopoh.Cryptography.Blake2b.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\isopoh.cryptography.securearray\1.1.10\lib\net5.0\Isopoh.Cryptography.SecureArray.dll">
+      <PackagePath>Isopoh.Cryptography.SecureArray.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.extensions.objectpool\5.0.3\lib\net5.0\Microsoft.Extensions.ObjectPool.dll">
+      <PackagePath>Microsoft.Extensions.ObjectPool.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.InteractiveExperiences.Projection.dll">
       <PackagePath>Microsoft.InteractiveExperiences.Projection.dll</PackagePath>
     </AppxPackagedFile>
@@ -76,8 +94,32 @@
     <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\mono.posix\7.1.0-final.1.21458.1\lib\net6.0\Mono.Posix.dll">
+      <PackagePath>Mono.Posix.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\mono.unix\7.1.0-final.1.21458.1\lib\net6.0\Mono.Unix.dll">
+      <PackagePath>Mono.Unix.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\ngettext\0.6.6\lib\netstandard2.0\NGettext.dll">
+      <PackagePath>NGettext.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\peachpie.library\1.2.0-r16166\lib\net5.0\Peachpie.Library.dll">
+      <PackagePath>Peachpie.Library.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\peachpie.library.regularexpressions\1.6.0\lib\netstandard2.1\Peachpie.Library.RegularExpressions.dll">
+      <PackagePath>Peachpie.Library.RegularExpressions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\peachpie.runtime\1.2.0-r16166\lib\net5.0\Peachpie.Runtime.dll">
+      <PackagePath>Peachpie.Runtime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\rationals\1.4.0\lib\netstandard1.3\Rationals.dll">
+      <PackagePath>Rationals.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\runtime.win7-x64.runtime.native.system.io.compression\4.3.2\runtimes\win7-x64\native\clrcompression.dll">
+      <PackagePath>clrcompression.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.22\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -748,6 +790,9 @@
     <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.29\lib\net6.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Test\Demo\bin\Release\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.22\runtimes\win-x64\native\createdump.exe">
       <PackagePath>createdump.exe</PackagePath>
     </AppxPackagedFile>
@@ -777,6 +822,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\CSProject\WebAPI\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\CSProject\WebAPI\logo.ico">
+      <PackagePath>logo.ico</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

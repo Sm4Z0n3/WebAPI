@@ -50,7 +50,6 @@ namespace WebAPI.Page
                     string[] folders = Directory.GetDirectories(ProjectPath, "*", SearchOption.AllDirectories);
                     foreach (string folder in folders)
                     {
-                        Console.WriteLine(folder);
                         ProjectList.Items.Add(folder.Replace(ProjectPath + "\\", ""));
                     }
                 }
@@ -115,7 +114,7 @@ namespace WebAPI.Page
         {
             string newBody = ProjectBody.Text;
             string oldBody = Text_GetCenter(ProjectInfo_, "<ProjectBody>", "</ProjectBody>");
-            string result = ProjectInfo_.Replace(oldBody,newBody);
+            string result = ProjectInfo_.Replace(oldBody, newBody);
             File.WriteAllText(ProjectPath + "\\" + ProjectCreatName.Text + "\\Main.novaProject", result);
         }
 
@@ -132,7 +131,14 @@ namespace WebAPI.Page
             if(NewProjectName)
             {
                 Directory.CreateDirectory(ProjectPath + "\\" + ProjectNew_Name.Text);
-                File.WriteAllText(ProjectPath + "\\" + ProjectNew_Name.Text + "\\Main.novaProject",$"<Project>\n\t<ProjectInfo>\n\t\t<ProjectName>{ProjectNew_Name.Text}</ProjectName>\n\t\t<HTTPS>true</HTTPS>\n\t\t<CreatTime>{DateTime.Now.ToString("yyyy-MM-dd HH:mm")}</CreatTime>\n\t</ProjectInfo>\n\t<Items>\n\t\t<Item Name=\"pre1\" Must=\"true\" Text=\"     \" Content=\"±¸×¢\" State=\"true\"></Item>\n\t</Items>\n\t<ProjectBody></ProjectBody>\n</Project>");
+                File.WriteAllText(ProjectPath + "\\" + ProjectNew_Name.Text + "\\Main.novaProject",$"<Project>\n\t<ProjectInfo>\n\t\t<ProjectName>{ProjectNew_Name.Text}</ProjectName>\n\t\t<HTTPS>true</HTTPS>\n\t\t<CreatTime>{DateTime.Now.ToString("yyyy-MM-dd HH:mm")}</CreatTime>\n\t</ProjectInfo>\n\t<Items></Items>\n\t<ProjectBody></ProjectBody>\n</Project>");
+                File.WriteAllText(ProjectPath + "\\" + ProjectNew_Name.Text + "\\return.php", @"
+        function Main($name) {
+            return 'Hello '.$name;
+        }
+        
+        $result = Main('user');
+        echo $result;");
             }
             Project_ref_Click(new object(), new RoutedEventArgs());
         }

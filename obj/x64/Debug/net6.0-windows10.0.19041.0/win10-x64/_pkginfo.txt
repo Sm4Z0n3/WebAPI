@@ -1,0 +1,1 @@
+E:\CSProject\WebAPI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\AppPackages\WebAPI_1.0.0.0_x64_Debug_Test\WebAPI_1.0.0.0_x64_Debug.msix

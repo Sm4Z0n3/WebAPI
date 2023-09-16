@@ -20,7 +20,7 @@
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Remark" Width="160" TextAlignment="Center" LineHeight="11" FontSize="20" Margin="310,-1,0,1"/>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="State" Width="160" TextAlignment="Center" LineHeight="11" FontSize="20" Margin="510,-1,0,1"/>
             </Grid>
-            <ListBox x:ConnectionId='5' x:Name="PreList" Margin="63,255,90,225" Background="#02FFFFFF"                                            >
+            <ListBox x:ConnectionId='5' Name="PreList" Margin="63,255,90,225" Background="#02FFFFFF">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <Grid>
@@ -33,26 +33,19 @@
                                 <ColumnDefinition Width="40"/>
                                 <ColumnDefinition Width="140"/>
                             </Grid.ColumnDefinitions>
-                            <TextBox Name="Name_" Grid.Column="0" Text="{Binding Name, Mode=TwoWay}" />
-
+                            <TextBox Name="Name_" Grid.Column="0" Text="{Binding Name}" />
                             <TextBlock Grid.Column="1" Text="{Binding Text}" />
-
-                            <ComboBox Name="Must_" Grid.Column="2" SelectedIndex="0" SelectedValue="{Binding Must, Mode=TwoWay}">
+                            <ComboBox Name="Must_" Grid.Column="2" SelectedIndex="{Binding Must}">
                                 <ComboBoxItem Content="True" />
                                 <ComboBoxItem Content="False" />
                             </ComboBox>
-
                             <TextBlock Grid.Column="3" Text="{Binding Text}" />
-
-                            <TextBox Name="Remark_" Grid.Column="4" Text="{Binding Content, Mode=TwoWay}" />
-
+                            <TextBox Name="Remark_" Grid.Column="4" Text="{Binding Content}" />
                             <TextBlock Grid.Column="5" Text="{Binding Text}" />
-
-                            <ComboBox Name="State_" Grid.Column="6" SelectedIndex="0" SelectedValue="{Binding State, Mode=TwoWay}">
+                            <ComboBox Name="State_" Grid.Column="6" SelectedIndex="{Binding State}">
                                 <ComboBoxItem Content="Disable" />
                                 <ComboBoxItem Content="Enable" />
                             </ComboBox>
-                            
                         </Grid>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
@@ -60,6 +53,10 @@
             <AppBarButton x:ConnectionId='6' Icon="Add" Label="Add parameters" Margin="76,535,0,0" Width="124" Height="60" FontSize="12"                           />
             <AppBarButton x:ConnectionId='7' Name="PreSave" Icon="Save" Label="Save parameters" Margin="245,535,0,0" Width="124" Height="60" FontSize="12"                      />
             <AppBarButton x:ConnectionId='8' x:Name="PreDel" Icon="Delete" Label="Del parameters" Margin="412,535,0,0" Width="124" Height="60" FontSize="12"                     />
+            <AppBarToggleButton x:ConnectionId='9' Name="ApiStart" Height="60" Label="Start API" Margin="573,535,0,0" Width="155" Icon="Play" Background="{x:Null}"                       />
+            <AppBarToggleButton x:ConnectionId='10' x:Name="ApiStart_Copy" Height="60" Label="Start API" Margin="573,535,0,0" Width="155" Icon="Play" Background="{x:Null}"                       />
+            <AppBarButton x:ConnectionId='11' x:Name="EditCode" Icon="Edit" Label="EditCode" Margin="76,625,0,0" Width="124" Height="60" FontSize="12"                       />
+            <AppBarButton x:ConnectionId='12' x:Name="RefreshList" Icon="Sync" Label="Refresh List" Margin="245,625,0,0" Width="124" Height="60" FontSize="12"                          />
         </Grid>
     </Grid>
 </Page>

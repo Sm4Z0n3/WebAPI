@@ -55,6 +55,14 @@
             "Microsoft.WindowsAppSDK": {
               "target": "Package",
               "version": "[1.2.221109.1, )"
+            },
+            "Peachpie.Library": {
+              "target": "Package",
+              "version": "[1.2.0-r16166, )"
+            },
+            "Peachpie.Runtime": {
+              "target": "Package",
+              "version": "[1.2.0-r16166, )"
             }
           },
           "imports": [
@@ -79,6 +87,10 @@
             },
             {
               "name": "Microsoft.AspNetCore.App.Runtime.win-x86",
+              "version": "[6.0.22, 6.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Crossgen2.win-x86",
               "version": "[6.0.22, 6.0.22]"
             },
             {

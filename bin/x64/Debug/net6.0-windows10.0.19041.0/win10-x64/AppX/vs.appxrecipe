@@ -29,21 +29,45 @@
     <AppXManifest Include="E:\CSProject\WebAPI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-09-16T05:49:15.189</Modified>
+      <Modified>2023-09-16T18:02:33.072</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\CSProject\WebAPI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-09-16T05:49:15.074</Modified>
+      <Modified>2023-09-16T18:02:32.870</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\CSProject\WebAPI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\WebAPI.runtimeconfig.json">
       <PackagePath>WebAPI.runtimeconfig.json</PackagePath>
-      <Modified>2023-09-16T05:10:20.529</Modified>
+      <Modified>2023-09-16T18:02:32.598</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\CSProject\WebAPI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\WebAPI.dll">
       <PackagePath>WebAPI.dll</PackagePath>
-      <Modified>2023-09-16T05:49:14.868</Modified>
+      <Modified>2023-09-16T18:02:31.768</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\bcrypt.net-next\4.0.2\lib\net5.0\BCrypt.Net-Next.dll">
+      <PackagePath>BCrypt.Net-Next.dll</PackagePath>
+      <Modified>2020-11-19T10:27:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\fluentftp\33.0.3\lib\netstandard2.1\FluentFTP.dll">
+      <PackagePath>FluentFTP.dll</PackagePath>
+      <Modified>2020-11-28T13:10:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\isopoh.cryptography.argon2\1.1.10\lib\net5.0\Isopoh.Cryptography.Argon2.dll">
+      <PackagePath>Isopoh.Cryptography.Argon2.dll</PackagePath>
+      <Modified>2020-11-18T18:43:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\isopoh.cryptography.blake2b\1.1.10\lib\net5.0\Isopoh.Cryptography.Blake2b.dll">
+      <PackagePath>Isopoh.Cryptography.Blake2b.dll</PackagePath>
+      <Modified>2020-11-18T18:42:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\isopoh.cryptography.securearray\1.1.10\lib\net5.0\Isopoh.Cryptography.SecureArray.dll">
+      <PackagePath>Isopoh.Cryptography.SecureArray.dll</PackagePath>
+      <Modified>2020-11-18T18:42:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\microsoft.extensions.objectpool\5.0.3\lib\net5.0\Microsoft.Extensions.ObjectPool.dll">
+      <PackagePath>Microsoft.Extensions.ObjectPool.dll</PackagePath>
+      <Modified>2021-01-23T12:33:04.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\lib\net6.0-windows10.0.18362.0\Microsoft.InteractiveExperiences.Projection.dll">
       <PackagePath>Microsoft.InteractiveExperiences.Projection.dll</PackagePath>
@@ -101,9 +125,41 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
       <Modified>2022-11-08T19:31:22.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\mono.posix\7.1.0-final.1.21458.1\lib\net6.0\Mono.Posix.dll">
+      <PackagePath>Mono.Posix.dll</PackagePath>
+      <Modified>2021-09-08T14:38:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\mono.unix\7.1.0-final.1.21458.1\lib\net6.0\Mono.Unix.dll">
+      <PackagePath>Mono.Unix.dll</PackagePath>
+      <Modified>2021-09-08T14:38:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\ngettext\0.6.6\lib\netstandard2.0\NGettext.dll">
+      <PackagePath>NGettext.dll</PackagePath>
+      <Modified>2020-07-18T08:30:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\peachpie.library\1.2.0-r16166\lib\net5.0\Peachpie.Library.dll">
+      <PackagePath>Peachpie.Library.dll</PackagePath>
+      <Modified>2023-08-28T12:03:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\peachpie.library.regularexpressions\1.6.0\lib\netstandard2.1\Peachpie.Library.RegularExpressions.dll">
+      <PackagePath>Peachpie.Library.RegularExpressions.dll</PackagePath>
+      <Modified>2021-02-17T18:32:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\peachpie.runtime\1.2.0-r16166\lib\net5.0\Peachpie.Runtime.dll">
+      <PackagePath>Peachpie.Runtime.dll</PackagePath>
+      <Modified>2023-08-28T12:03:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\rationals\1.4.0\lib\netstandard1.3\Rationals.dll">
+      <PackagePath>Rationals.dll</PackagePath>
+      <Modified>2020-12-28T17:45:58.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\.nuget\packages\microsoft.windowsappsdk\1.2.221109.1\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
       <Modified>2022-11-08T19:31:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\.nuget\packages\runtime.win7-x64.runtime.native.system.io.compression\4.3.2\runtimes\win7-x64\native\clrcompression.dll">
+      <PackagePath>clrcompression.dll</PackagePath>
+      <Modified>2018-06-22T08:21:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.22\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -997,17 +1053,21 @@
       <PackagePath>WinRT.Runtime.dll</PackagePath>
       <Modified>2023-06-09T20:10:26.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\Test\Demo\bin\Release\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2020-03-04T03:00:12.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.22\runtimes\win-x64\native\createdump.exe">
       <PackagePath>createdump.exe</PackagePath>
       <Modified>2023-08-25T02:21:14.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\CSProject\WebAPI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\WebAPI.deps.json">
       <PackagePath>WebAPI.deps.json</PackagePath>
-      <Modified>2023-09-16T05:10:20.388</Modified>
+      <Modified>2023-09-16T18:02:32.467</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\CSProject\WebAPI\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>WebAPI.exe</PackagePath>
-      <Modified>2023-09-16T05:49:14.896</Modified>
+      <Modified>2023-09-16T18:02:31.799</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\CSProject\WebAPI\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -1036,6 +1096,10 @@
     <AppxPackagedFile Include="E:\CSProject\WebAPI\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <Modified>2023-04-22T05:42:57.170</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\CSProject\WebAPI\logo.ico">
+      <PackagePath>logo.ico</PackagePath>
+      <Modified>2023-06-23T07:57:10.000</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
