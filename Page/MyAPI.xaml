@@ -10,7 +10,56 @@
     >
 
     <Grid Background="#02000000">
-        <ListBox x:Name="ProjectList" Width="259" FontSize="14" FontFamily="Cascadia Code" Background="{x:Null}" HorizontalAlignment="Left"  Height="Auto" MinWidth="100" MinHeight="100" MaxWidth="500" BorderThickness="1,1,1,1" Margin="0,60,0,0" />
+        <ListBox x:Name="ProjectList" Width="259" FontSize="14" FontFamily="Cascadia Code" Background="{x:Null}" HorizontalAlignment="Left"  Height="Auto" MinWidth="100" MinHeight="100" MaxWidth="500" BorderThickness="1,1,1,1" Margin="0,60,0,0" SelectionChanged="ProjectList_SelectionChanged"/>
         <TextBlock HorizontalAlignment="Left" Height="58" Margin="2,2,0,0" TextWrapping="Wrap" Text="Project" VerticalAlignment="Top" Width="189" FontSize="36" FontFamily="Cascadia Code" LineHeight="6" TextAlignment="Center"/>
+        <Grid x:Name="NowProjectSetting" Margin="287,10,0,0" Background="#02000000">
+            <AppBarToggleButton x:Name="EnableHTTPS" Icon="WebCam" Label="Enable HTTPS" Margin="38,55,0,0" Height="76" Width="76" FontSize="20" Click="EnableHTTPS_Click"/>
+            <Grid Margin="63,214,0,0" Background="#02000000" HorizontalAlignment="Left" VerticalAlignment="Top" Height="41" Width="697">
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Name" Width="130" TextAlignment="Center" LineHeight="11" FontSize="20"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Required" Width="100" TextAlignment="Center" LineHeight="11" FontSize="20" Margin="170,-1,0,1"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Remark" Width="160" TextAlignment="Center" LineHeight="11" FontSize="20" Margin="310,-1,0,1"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="State" Width="160" TextAlignment="Center" LineHeight="11" FontSize="20" Margin="510,-1,0,1"/>
+            </Grid>
+            <ListBox x:Name="PreList" Margin="63,255,90,225" Background="#02FFFFFF">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="130"/>
+                                <ColumnDefinition Width="40"/>
+                                <ColumnDefinition Width="100"/>
+                                <ColumnDefinition Width="40"/>
+                                <ColumnDefinition Width="160"/>
+                                <ColumnDefinition Width="40"/>
+                                <ColumnDefinition Width="140"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBox Name="Name_" Grid.Column="0" Text="{Binding Name, Mode=TwoWay}" />
+
+                            <TextBlock Grid.Column="1" Text="{Binding Text}" />
+
+                            <ComboBox Name="Must_" Grid.Column="2" SelectedIndex="0" SelectedValue="{Binding Must, Mode=TwoWay}">
+                                <ComboBoxItem Content="True" />
+                                <ComboBoxItem Content="False" />
+                            </ComboBox>
+
+                            <TextBlock Grid.Column="3" Text="{Binding Text}" />
+
+                            <TextBox Name="Remark_" Grid.Column="4" Text="{Binding Content, Mode=TwoWay}" />
+
+                            <TextBlock Grid.Column="5" Text="{Binding Text}" />
+
+                            <ComboBox Name="State_" Grid.Column="6" SelectedIndex="0" SelectedValue="{Binding State, Mode=TwoWay}">
+                                <ComboBoxItem Content="Disable" />
+                                <ComboBoxItem Content="Enable" />
+                            </ComboBox>
+                            
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <AppBarButton Icon="Add" Label="Add parameters" Margin="76,535,0,0" Width="124" Height="60" FontSize="12" Click="AppBarButton_Click"/>
+            <AppBarButton Name="PreSave" Icon="Save" Label="Save parameters" Margin="245,535,0,0" Width="124" Height="60" FontSize="12" Click="PreSave_Click"/>
+            <AppBarButton x:Name="PreDel" Icon="Delete" Label="Del parameters" Margin="412,535,0,0" Width="124" Height="60" FontSize="12" Click="PreDel_Click"/>
+        </Grid>
     </Grid>
 </Page>

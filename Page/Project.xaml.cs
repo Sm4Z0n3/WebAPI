@@ -75,19 +75,26 @@ namespace WebAPI.Page
 
         private void Project_del_Click(object sender, RoutedEventArgs e)
         {
-            if (ProjectList.SelectedValue.ToString() != "Not Found Project.")
+            try
             {
-                Directory.Delete(ProjectPath + "\\" + ProjectList.SelectedValue.ToString(),true);
-                Object delitem = ProjectList.SelectedItem;
-                ProjectList.SelectedItem = null;
-                ProjectList.Items.Remove(delitem);
+                if (ProjectList.SelectedItem != null)
+                {
+                    if(ProjectList.SelectedValue.ToString() != "Not Found Project.") 
+                    {
+                    Directory.Delete(ProjectPath + "\\" + ProjectList.SelectedValue.ToString(), true);
+                    Object delitem = ProjectList.SelectedItem;
+                    ProjectList.SelectedItem = null;
+                    ProjectList.Items.Remove(delitem);
+                    }
+                }
             }
+            catch { }
         }
 
         private void Project_ref_Click(object sender, RoutedEventArgs e)
         {
             ProjectList.Items.Clear();
-            Console.WriteLine($"ProjectPaht: {ProjectPath}\nPathExists: {Directory.Exists(ProjectPath)}\nFiles Num: {Directory.GetFiles(ProjectPath).Length}");
+            //Console.WriteLine($"ProjectPath: {ProjectPath}\nPathExists: {Directory.Exists(ProjectPath)}\nFiles Num: {Directory.GetFiles(ProjectPath).Length}");
             if (!Directory.Exists(ProjectPath))
                 Directory.CreateDirectory(ProjectPath);
             else
@@ -104,6 +111,14 @@ namespace WebAPI.Page
             }
         }
 
+        private void ProjectBody_Save_Click(object sender, RoutedEventArgs e)
+        {
+            string newBody = ProjectBody.Text;
+            string oldBody = Text_GetCenter(ProjectInfo_, "<ProjectBody>", "</ProjectBody>");
+            string result = ProjectInfo_.Replace(oldBody,newBody);
+            File.WriteAllText(ProjectPath + "\\" + ProjectCreatName.Text + "\\Main.novaProject", result);
+        }
+
         private void ProjectNew_Name_TextChanged(object sender, TextChangedEventArgs e)
         {
             if (Directory.Exists(ProjectPath + "\\" + ProjectNew_Name.Text))
@@ -117,7 +132,7 @@ namespace WebAPI.Page
             if(NewProjectName)
             {
                 Directory.CreateDirectory(ProjectPath + "\\" + ProjectNew_Name.Text);
-                File.WriteAllText(ProjectPath + "\\" + ProjectNew_Name.Text + "\\Main.novaProject",$"<ProjectInfo>\r\n\t<ProjectName>{ProjectNew_Name.Text}</ProjectName>\r\n\t<CreatTime>{DateTime.Now.ToString("yyyy-MM-dd HH:mm")}</CreatTime>\r\n</ProjectInfo>\r\n<ProjectBody>\r\n\r\n</ProjectBody>");
+                File.WriteAllText(ProjectPath + "\\" + ProjectNew_Name.Text + "\\Main.novaProject",$"<Project>\n\t<ProjectInfo>\n\t\t<ProjectName>{ProjectNew_Name.Text}</ProjectName>\n\t\t<HTTPS>true</HTTPS>\n\t\t<CreatTime>{DateTime.Now.ToString("yyyy-MM-dd HH:mm")}</CreatTime>\n\t</ProjectInfo>\n\t<Items>\n\t\t<Item Name=\"pre1\" Must=\"true\" Text=\"     \" Content=\"±¸×¢\" State=\"true\"></Item>\n\t</Items>\n\t<ProjectBody></ProjectBody>\n</Project>");
             }
             Project_ref_Click(new object(), new RoutedEventArgs());
         }
@@ -136,21 +151,6 @@ namespace WebAPI.Page
             return result;
         }
 
-        public string Text_ReplaceCenter(string source, string replacement, string first, string last)
-        {
-            string result = "";
-            int startIndex = source.IndexOf(first);
-            int endIndex = source.IndexOf(last);
-            if (startIndex >= 0 && endIndex >= 0)
-            {
-                startIndex += first.Length; // move to the end of the first text
-                int length = endIndex - startIndex; // calculate the length of the text between
-                source = source.Remove(startIndex, length); // remove the text between
-                source = source.Insert(startIndex, replacement); // insert the replacement text
-                result = source; // result is "This is a test string with firstAny given string comes herelast words"
-            }
-            return result;
-        }
 
     }
 }

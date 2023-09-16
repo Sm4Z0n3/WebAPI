@@ -36,7 +36,8 @@
                 <TextBlock x:Name="ProjectCreatTime" HorizontalAlignment="Left" Height="30" Margin="59,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="341" FontSize="24" LineHeight="6" TextAlignment="Center"/>
             </Grid>
         </Border>
-        <TextBox x:Name="ProjectBody" HorizontalAlignment="Left" Margin="784,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="611" Width="412" FontSize="18"/>
-       
+        <TextBox x:Name="ProjectBody" HorizontalAlignment="Left" Margin="784,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="18" MinWidth="412" MinHeight="550"/>
+        <Button x:Name="ProjectBody_Save" Click="ProjectBody_Save_Click"  Content="Save" Margin="909,626,0,0" VerticalAlignment="Top" Height="39" Width="163" FontSize="20" HorizontalAlignment="Left" />
+
     </Grid>
 </Page>
