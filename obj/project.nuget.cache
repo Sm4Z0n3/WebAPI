@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "t7r9DrMoob8k5IUAOe8bfwCyXiupryLvGJKRPL9imMfuhM2uxeYU7DiJ4I52DEG+/cVIh957qVMHCSP1aTBaWw==",
+  "dgSpecHash": "ZnPmtMu6bjFpVhPJey7SHhRT6r7cRzciFcTt4zeC9g9npYjY4dyEvswwsILm2RsuDHhta7kL/xtOMfeEdQBpmw==",
   "success": true,
   "projectFilePath": "E:\\CSProject\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
@@ -140,7 +140,6 @@
     "D:\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\6.0.22\\microsoft.netcore.app.runtime.win-x86.6.0.22.nupkg.sha512",
     "D:\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.29\\microsoft.windows.sdk.net.ref.10.0.19041.29.nupkg.sha512",
     "D:\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\6.0.22\\microsoft.aspnetcore.app.runtime.win-x86.6.0.22.nupkg.sha512",
-    "D:\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x86\\6.0.22\\microsoft.netcore.app.crossgen2.win-x86.6.0.22.nupkg.sha512",
     "D:\\.nuget\\packages\\microsoft.netcore.app.runtime.win-arm64\\6.0.22\\microsoft.netcore.app.runtime.win-arm64.6.0.22.nupkg.sha512",
     "D:\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.22\\microsoft.aspnetcore.app.runtime.win-x64.6.0.22.nupkg.sha512",
     "D:\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-arm64\\6.0.22\\microsoft.windowsdesktop.app.runtime.win-arm64.6.0.22.nupkg.sha512",
