@@ -802,6 +802,12 @@
     <AppxPackagedFile Include="E:\CSProject\WebAPI\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>WebAPI.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\CSProject\WebAPI\Assets\App.xaml">
+      <PackagePath>Assets\App.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\CSProject\WebAPI\Assets\App.xaml.cs">
+      <PackagePath>Assets\App.xaml.cs</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\CSProject\WebAPI\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
@@ -820,8 +826,14 @@
     <AppxPackagedFile Include="E:\CSProject\WebAPI\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\CSProject\WebAPI\Assets\WebAPI_TemporaryKey.pfx">
+      <PackagePath>Assets\WebAPI_TemporaryKey.pfx</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\CSProject\WebAPI\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\CSProject\WebAPI\Assets\xboxg.png">
+      <PackagePath>Assets\xboxg.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\CSProject\WebAPI\logo.ico">
       <PackagePath>logo.ico</PackagePath>

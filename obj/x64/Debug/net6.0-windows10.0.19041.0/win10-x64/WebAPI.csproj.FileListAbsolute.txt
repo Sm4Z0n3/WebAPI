@@ -325,3 +325,4 @@ E:\CSProject\WebAPI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Rationals
 E:\CSProject\WebAPI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\clrcompression.dll
 E:\CSProject\WebAPI\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Assets\App.xaml
 E:\CSProject\WebAPI\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Assets\App.xbf
+E:\CSProject\WebAPI\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Assets\App.xbf
